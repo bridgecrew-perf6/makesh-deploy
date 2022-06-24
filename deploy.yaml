@@ -46,4 +46,3 @@ spec:
 status:
   loadBalancer: {}
         
-status: {}
