@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: makeshapp1
+  name: makeshapp1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: makeshapp1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: makeshapp1
+    spec:
+      containers:
+      - image: makeshdocker/makeshmobi:appv1
+        name: makeshmobi
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
